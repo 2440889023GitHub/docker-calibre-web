@@ -165,6 +165,7 @@ RUN wget "https://www.archlinux.org/packages/core/x86_64/nspr/download/" -O /tmp
 # ERROR: comicapi 2.0 has requirement natsort==3.5.2, but you'll have natsort 6.2.0 which is incompatible.
 RUN \
     echo "--- Update the package list ------------------------------------------------" && \
+    apk add gcc musl-dev python3-dev libffi-dev openssl-dev cargo && \
     apk -U upgrade && \
     \
     echo "--- Install applications via package manager -------------------------------" && \
