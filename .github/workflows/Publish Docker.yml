@@ -41,6 +41,5 @@ jobs:
           file: ./Dockerfile
           platforms: linux/arm64
           push: true
-          tags: |
-            2440889023/calibreweb:${{ steps.set-version.outputs.version }}
-            2440889023/calibreweb:latest
+          tags: 
+            690094504/calibreweb:latest
