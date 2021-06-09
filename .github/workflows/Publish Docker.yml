@@ -42,5 +42,5 @@ jobs:
           platforms: linux/arm64
           push: true
           tags: |
-            690094504/calibreweb:${{ steps.set-version.outputs.version }}
-            690094504/calibreweb:latest
+            2440889023GitHub/calibreweb:${{ steps.set-version.outputs.version }}
+            2440889023GitHub/calibreweb:latest
